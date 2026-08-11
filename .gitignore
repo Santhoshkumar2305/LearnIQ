@@ -1,0 +1,27 @@
+# Dependency directories
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build outputs
+client/dist/
+dist/
+
+# Security: Local environment files containing API keys and passwords
+.env
+.env.local
+server/.env
+client/.env
+
+# Editor & System Files
+.vscode/
+.idea/
+.gemini/
+.agents/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+Thumbs.db
+Desktop.ini

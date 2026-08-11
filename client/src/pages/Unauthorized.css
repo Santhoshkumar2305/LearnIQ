@@ -1,0 +1,40 @@
+.unauthorized-container {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  padding: 24px;
+}
+
+.unauthorized-card {
+  max-width: 480px;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-shield {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(239, 68, 68, 0.15);
+  margin-bottom: 8px;
+}
+
+.text-danger {
+  color: var(--danger);
+}
+
+.unauthorized-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.btn-back {
+  width: 100%;
+  margin-top: 10px;
+  gap: 8px;
+}

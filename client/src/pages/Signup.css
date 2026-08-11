@@ -1,0 +1,54 @@
+/* Reuse auth styles from Login.css */
+@import './Login.css';
+
+.role-selector-container {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.role-option {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.role-option:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--text-muted);
+}
+
+.role-option.active {
+  background: rgba(139, 92, 246, 0.08);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-glow);
+}
+
+.role-option svg {
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.role-option.active svg {
+  color: var(--primary);
+}
+
+.role-option span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.role-description {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
