@@ -74,19 +74,6 @@ The backend application is built using Node.js and Express. It connects to Mongo
 
 ---
 
-## 🔒 Security Configuration
-
-To ensure credential security, hardcoded admin values have been removed from the codebase. The server retrieves admin settings from `/server/.env`.
-
-Ensure your `/server/.env` includes:
-```ini
-# Admin Seeding Credentials
-ADMIN_EMAIL=santhoshkumarstudy555@gmail.com
-ADMIN_NAME="Santhosh Admin"
-ADMIN_PASSWORD=santhoshadmin123
-```
-
----
 
 ## 🚀 Setup & Installation
 
