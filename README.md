@@ -1,6 +1,6 @@
 # Smart Learning Management System (SLMS)
 
-A feature-rich, premium Smart Learning Management System (SLMS) built using the **MERN Stack** (MongoDB, Express.js, React + Vite, Node.js) with real-time notifications via Socket.io and AI-assisted grading/summarization capabilities using the **Groq API** (Llama-3 models).
+A feature-rich, premium Smart Learning Management System (SLMS) built using the **MERN Stack** (MongoDB, Express.js, React + Vite, Node.js) with real-time notifications via Socket.io and AI-assisted grading/summarization capabilities using the **Groq API** (GPT OSS models).
 
 ---
 

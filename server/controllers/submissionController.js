@@ -260,7 +260,7 @@ You MUST respond ONLY with a valid JSON object. Do not include any conversationa
           content: promptText
         }
       ],
-      model: 'llama-3.1-8b-instant',
+      model: process.env.GROQ_MODEL || 'openai/gpt-oss-20b',
       temperature: 0.2,
       response_format: { type: 'json_object' }
     });

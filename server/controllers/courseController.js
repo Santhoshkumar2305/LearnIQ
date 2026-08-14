@@ -684,7 +684,7 @@ ${extractedText}
 """`
             }
           ],
-          model: 'llama-3.1-8b-instant',
+          model: process.env.GROQ_MODEL || 'openai/gpt-oss-20b',
           temperature: 0.3
         });
 
@@ -700,7 +700,7 @@ ${extractedText}
               content: `Generate a detailed study outline and notes summary for the topic: "${material.title}" in the course: "${course.title}". Explain key subtopics and concepts related to this topic in beautiful Markdown.`
             }
           ],
-          model: 'llama-3.1-8b-instant',
+          model: process.env.GROQ_MODEL || 'openai/gpt-oss-20b',
           temperature: 0.3
         });
         notes = `*Note: PDF text parsing was bypassed, generating general topic study guide.*\n\n` + (completion.choices[0]?.message?.content || '');
@@ -714,7 +714,7 @@ ${extractedText}
             content: `Generate a detailed study outline and notes summary for the video lecture topic: "${material.title}" in the course: "${course.title}". Explain key subtopics and concepts related to this topic in beautiful Markdown.`
           }
         ],
-        model: 'llama-3.1-8b-instant',
+        model: process.env.GROQ_MODEL || 'openai/gpt-oss-20b',
         temperature: 0.3
       });
       notes = completion.choices[0]?.message?.content || 'Failed to generate outline.';
